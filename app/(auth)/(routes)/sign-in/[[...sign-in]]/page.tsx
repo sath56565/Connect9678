@@ -8,6 +8,7 @@ import {
   User, Shield, Hash, Headphones, Github,
   Twitter, Facebook, Instagram, Youtube, Volume2, Moon, Sun, Bell
 } from "lucide-react";
+import Image from 'next/image';
 
 export default function Page() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -312,9 +313,11 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="aspect-video rounded-lg overflow-hidden">
-                    <img 
+                    <Image 
                       src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?auto=format&fit=crop&q=80&w=2662"
                       alt="Connect platform interface preview"
+                      width={500}
+                      height={300}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -327,9 +330,11 @@ export default function Page() {
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-10 h-10 rounded-full border-2 border-white overflow-hidden">
-                      <img 
+                      <Image 
                         src={`https://i.pravatar.cc/100?img=${i+10}`} 
                         alt="User avatar" 
+                        width={40}
+                        height={40}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -464,7 +469,7 @@ export default function Page() {
                 </h2>
                 
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-                  Connect's revolutionary sub-channel system helps you organize conversations by topic, making it easy to find what you're looking for.
+                  Connect&apos;s revolutionary sub-channel system helps you organize conversations by topic, making it easy to find what you&apos;re looking for.
                 </p>
                 
                 <div className="space-y-8">
@@ -595,7 +600,7 @@ export default function Page() {
                 </h2>
                 
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-                  Connect's unique chat takes community conversation to the next level with rich features designed for meaningful interactions.
+                  Connect&apos;s unique chat takes community conversation to the next level with rich features designed for meaningful interactions.
                 </p>
                 
                 <div className="space-y-8">
@@ -638,9 +643,11 @@ export default function Page() {
               {/* Right Content - Image for Group Chat */}
               <div className="flex-1 w-full max-w-xl">
                 <div className="rounded-2xl overflow-hidden shadow-2xl dark:shadow-gray-900/50">
-                  <img 
+                  <Image 
                     src="https://www.chanty.com/blog/wp-content/uploads/2024/04/Chanty-video-call-1024x675.jpg"
                     alt="Advanced group chat interface showing rich text formatting and threads"
+                    width={500}
+                    height={300}
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -709,9 +716,11 @@ export default function Page() {
                 <div className="rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-900 p-12">
                   <div className="relative flex items-center justify-center">
                     <div className="absolute w-48 h-48 bg-blue-500/10 dark:bg-blue-400/5 rounded-full blur-3xl"></div>
-                    <img 
+                    <Image 
                       src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800&auto=format&fit=crop&q=60"
                       alt="Professional microphone representing high-quality voice channels"
+                      width={500}
+                      height={300}
                       className="relative z-10 w-full h-auto max-w-md mx-auto drop-shadow-2xl"
                     />
                   </div>
@@ -737,7 +746,7 @@ export default function Page() {
                 </h2>
                 
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed">
-                  Connect's video calls bring you closer to your friends, family, and team members with high-quality video and screen sharing.
+                  Connect&apos;s video calls bring you closer to your friends, family, and team members with high-quality video and screen sharing.
                 </p>
                 
                 <div className="space-y-8">
@@ -781,9 +790,11 @@ export default function Page() {
               {/* Right Content - Image for Video Calls */}
               <div className="flex-1 w-full max-w-xl">
                 <div className="rounded-2xl overflow-hidden shadow-2xl dark:shadow-gray-900/50">
-                  <img 
+                  <Image 
                     src="https://www.colourmylearning.com/wp-content/uploads/2020/03/group-video-calls-SQ.jpg"
                     alt="Video conference interface showing multiple participants in a grid layout"
+                    width={500}
+                    height={300}
                     className="w-full h-auto object-cover"
                   />
                 </div>
