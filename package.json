@@ -71,8 +71,8 @@
   },
   "devDependencies": {
     "@types/uuid": "^9.0.2",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "prisma": "^5.10.0"
   }
 }
